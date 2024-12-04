@@ -1,0 +1,21 @@
+body {
+    background-color: royalblue;
+
+}
+h1 {
+    text-align: center;
+    color: aliceblue;
+    font-family: monospace;
+}
+.about{
+    display: flex;
+}
+.profile {
+    text-align: center;
+     
+    
+}
+.teks{
+    text-align: center;
+
+} 

@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    /* Tambahkan untuk membungkus saat layar kecil */
+}
+
+.left-side {
+    background-color: #650073;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 50px 50px 0;
+    padding: 20px;
+}
+
+.logoright {
+    display: none;
+}
+
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form .forgot-Account {
+    text-align: right;
+    display: block;
+    margin-bottom: 20px;
+    color: #00209c;
+    text-decoration: none;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #650073;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #00187a;
+}
+
+.login-form .terms {
+    font-size: 12px;
+    color: #666;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        /* Menambah ini untuk memusatkan vertikal */
+        align-items: center;
+        /* Menambah ini untuk memusatkan horizontal */
+    }
+
+    .left-side {
+        display: none;
+    }
+
+    .right-side {
+        height: auto;
+        /* Mengubah agar lebih fleksibel */
+    }
+
+    .logoright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 120px;
+        /* Menambahkan sedikit margin di bawah logo */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .right-side {
+        height: auto;
+    }
+}
